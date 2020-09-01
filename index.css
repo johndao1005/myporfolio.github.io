@@ -1,0 +1,346 @@
+/* general set up */
+* {
+    box-sizing: border-box;
+}
+/* main color RGB(161, 17, 14) */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: RGB(161, 17, 14);
+    line-height: 1;
+    margin: 0;
+    min-height: 100%;
+}
+div.PageCover{
+    background: url(src/background.jpg);
+    width: 95%;
+    background-color: #210011;
+    margin: 2%;
+    display: block;
+    position: relative; 
+    z-index: 2;
+    border-radius: 0.5%;
+    background-repeat: repeat-x;
+}
+nav, header, footer{
+    display: block;
+}
+div label {
+    color: rgb(192, 217, 226);
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p{
+    font-size: 100%;
+    font-family:lato;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: lighter;
+    color: #D8CEF6;
+}
+.container{
+    display: block;
+    width:100%;
+    margin: auto;
+    padding: 4%;
+}
+.row{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index:-2;
+}
+/* nav bar */
+nav{
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    top: 0px;
+    
+}
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: -3;
+    background-color: rgb(109, 4, 2) ;
+}
+nav ul li{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+ul li a{
+    font-family: lato;
+    display: block;
+    text-decoration: inherit;
+    font-size: 120%;
+    min-height: 16px;
+    text-align: center;
+    padding:16px;
+    color: white;
+}
+ul li a:hover{
+    background-color: #610B0B;
+    border-radius: 7%;
+}
+ul li.dropdownIcon {
+    display: none;
+}
+/* cover and introduction */
+
+div.container img.profilepic{
+    padding-top: 30px;
+    position: relative;
+    max-width: 55%;
+    margin-bottom:0px;
+    margin-left: 25%;
+    border-radius: 50%;
+    z-index: -3;
+}
+h1{
+    color: rgb(229, 236, 238);
+    font-family: Courier;
+    font-size: 200%;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+/* detail about me */
+#chefpic {
+    margin-left: 15%;
+    width:55%;
+    border-radius: 50%;
+    margin-bottom:0px;}
+
+#chefpic_hidden {
+        display: none;
+}
+p.text1 {
+    text-align: left;
+    color: rgb(192, 217, 226);
+    font-size: 115%;
+    margin-left:5%;
+    margin-right: 5%;
+    font-family:lato;
+    margin-bottom:10px;
+}
+h4 {
+    text-align: center;
+    margin-left:15%;
+    font-size: 230%;
+    color: rgb(192, 217, 226);
+    font-family: Courier;   
+}
+p.text2 {
+    text-align: left;
+    color: rgb(192, 217, 226);
+    font-size: 115%;
+    margin-left:15%;
+    margin-right:10%;
+    font-family:lato;
+    margin-bottom:0 ;
+}
+#adventurepic {
+    border-radius: 50%;
+    width:70%;
+    margin-left:5%;
+    margin-bottom:0;
+}
+#adventurepic_hidden {
+    display: none;
+}
+/* contact */
+
+/* icon */
+.social {
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    z-index: 3;
+	color: #666;
+	text-decoration: none;
+}
+div a img.icon {
+    max-width: 50px; 
+    margin: 10px;
+    text-decoration: none;
+}
+div a img.github{
+    background-color: #fbfbfb;
+    border-radius: 50%;
+}
+div a img.icon::before,
+div a img.icon::before:hover{
+    text-decoration: none;
+}
+
+div a img.icon:hover,
+div a img.icon:focus{
+    text-decoration-line: none;
+	color: #111;
+	text-shadow: 0px 0px 3px #111;
+}
+/* contact form */
+.feedback-input {
+	color:#3c3c3c;
+	font-size: 115%;
+	border-radius: 0;
+	background-color: #fbfbfb;
+    width: 100%;
+    margin:0;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+    margin: 1%;
+    max-width:300px;
+}
+
+#email{
+	margin: 1%;
+    max-width:300px;
+   
+}
+
+#Comment {
+    margin: 1%;
+    max-width:300px;
+  
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+div.message {
+    font-family: Courier;
+    font-size: 200%;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    
+}
+#button-blue{
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+    min-width:300px;
+}
+
+
+/* make website responsive */
+@media screen and (max-width: 580px){
+    ul.navbar li:not(:nth-child(1)){
+    display: none;
+    }
+    ul.navbar li.dropdownIcon {
+        display: block;
+        float: right;
+        
+    }
+    /* ul.navbar.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.navbar.responsive{
+    position: relative;
+        
+    }
+    ul.navbar.responsive li{
+    display: inline;
+    float:none;
+    
+    }
+    ul.navbar.responsive li a {
+    display: block;
+    text-align: left
+    } */
+  
+ 
+    div.message{
+        padding: 1em 1em .25em 1em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    #name{
+        margin: 1%;
+        max-width:300px;
+    }
+    
+    #email{
+        margin: 1%;
+        max-width:300px;
+    }
+    
+    #comment{
+        margin: 1%;
+        max-width:300px;
+    }
+    /* icon */
+.social {
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 3;
+	color: #666;
+	text-decoration: none;
+}
+h4{
+    margin-left: 10%;
+}
+#chefpic{
+    display: none;
+}
+#adventurepic{
+    display: none;
+}
+#adventurepic_hidden{
+    display:block;
+border-radius: 50%;
+width:70%;
+margin-left: 15%;
+}
+#chefpic_hidden{
+display:block;
+border-radius: 50%;
+width:70%;
+margin-left: 15%;
+}
+}
